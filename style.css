@@ -14,8 +14,7 @@ header {
 }
 .conteudo {
   margin: 0 auto;
-  width: 100%;
-  max-width: 450px;
+  width: 40%;
   margin-top: 50px;
   margin-bottom: 50px;
   background: #00ccff;
@@ -29,7 +28,7 @@ header {
   margin-bottom: 35px;
 }
 .topo input {
-  width: 350px;
+  width: 70%;
   padding: 15px;
   border-radius: 12px;
   border: none;
@@ -84,10 +83,10 @@ header {
   background: #ff0000;
 }
 .textoTarefa {
-  overflow: hidden;
+  display: flex;
+  overflow-wrap: break-word;
   text-overflow: ellipsis;
-  width: 290px;
-  white-space: nowrap;
+  width: 70%;
 }
 
 #janelaEdicao {
@@ -178,4 +177,18 @@ form {
 
 .frm-linha button:hover {
   background: #3c3a3a;
+}
+@media (max-width: 870px) {
+  #listaTarefas li {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .textoTarefa {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  #janelaEdicao {
+    width: 80%;
+  }
 }
