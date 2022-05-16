@@ -69,6 +69,9 @@ header {
   align-items: center;
   margin-top: 20px;
 }
+#listaTarefas li span {
+  flex-wrap: wrap;
+}
 .btnAcao {
   border-radius: 20px;
   width: 38px;
